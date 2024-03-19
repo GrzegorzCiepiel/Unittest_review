@@ -13,7 +13,7 @@ class ShoppingCart:
         self.locals_discount = False
 
     def add_surfboards(self, quantity=1):
-        if self.num_surfboards + quantity > 4:
+        if self.num_surfboards + quantity > 5:
             raise TooManyBoardsError
         else:
             self.num_surfboards += quantity
