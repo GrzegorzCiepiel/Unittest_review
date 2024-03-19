@@ -15,6 +15,7 @@ class ShoppingCart:
     def add_surfboards(self, quantity=1):
         if self.num_surfboards + quantity > 5:
             raise TooManyBoardsError
+            __str__('Cart cannot have more than 5 surfboards in it!')
         else:
             self.num_surfboards += quantity
             suffix = '' if quantity == 1 else 's'

@@ -16,6 +16,7 @@ class SurfshopTests(unittest.TestCase):
                 message = self.cart.add_surfboards(num)
                 self.assertEqual(message, f'Successfully added {num} surfboards to cart!')
 
+    # @unittest.skip
     def test_to_many_boards(self):
         self.assertRaises( surfshop.TooManyBoardsError, self.cart.add_surfboards, 6)
 
