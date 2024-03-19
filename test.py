@@ -20,5 +20,11 @@ class SurfshopTests(unittest.TestCase):
         self.assertRaises( surfshop.TooManyBoardsError, self.cart.add_surfboards, 6)
 
 
-    def test
+    def test_discount(self):
+        self.cart.apply_locals_discount()
+        self.assertTrue(self.cart.locals_discount)
+
+
+
+
 unittest.main()
